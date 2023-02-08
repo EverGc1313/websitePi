@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Developing Team</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Brand Design</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Focus of the project</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Road map</a>
+    
+ 
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#team" class="w3-bar-item w3-button">Developing Team</a>
+    <a href="#work" class="w3-bar-item w3-button">Brand Design</a>
+    <a href="#pricing" class="w3-bar-item w3-button">Focus of the project</a>
+    <a href="#contact" class="w3-bar-item w3-button">Road map</a>
+    
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <center>
+  <img src="images/Banner.png" alt="boat" style="min-height:400px;max-height:400px;">
+  </center>
+</div>
+
+
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>OUR TEAM</h2>
+
+
+<div class="w3-row"><br>
+
+<div class="team">
+  <img src="images/team.jpg" style="width: 100px; height: 100px;" class="w3-circle">
+  <h3>Ever Guajardo</h3>
+  <p>Web Designer/Support/Boss man/Fixer</p>
+</div>
+
+
+
+</div>
+</div>
+
+<!-- Work Row -->
+<div class="work" id="work">
+
+
+<h2 style="text-align: center;">Our Work</h2>
+
+
+<div class="container">
+    <center>
+        <img src="images/login.png">
+    </center> 
+    <br>
+    <br>
+    <br>
+    <center>
+        <img src="images/register.png">
+    </center> 
+    <br>
+    <br>
+    <br>
+    <center>
+        <img src="images/index.png">
+    </center>
+    <br>
+    <br>
+    <br> 
+    <center>
+        <img src="images/chat.png">
+    </center> 
+    
+    
+</div>
+
+
+
+
+
+</div>
+
+
+
+<!-- Pricing Row -->
+<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+    <h2>Focus of the project</h2>
+    
+  
+    
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge">Objetive</p>
+        </li>
+        <p>
+          The main objetive of this application is create an enviroment to several people make a relationship 
+          it could be a friendship relationship or as well a sentimal relationship
+        </p>
+       
+      </ul>
+    </div>
+
+   
+</div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <h2 style="text-align: center;">Road Map</h2>
+  <center>
+    <img src="images/roadmap.png">
+  </center>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+  
+
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
